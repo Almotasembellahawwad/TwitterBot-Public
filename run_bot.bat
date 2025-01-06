@@ -67,8 +67,16 @@ goto menu
 
 :start_bot
 cls
-python twitter_bot.py
+echo [*] Initializing Twitter Bot...
+echo [*] Press Ctrl+C to stop the bot
 echo.
-echo Press any key to return to menu...
-pause > nul
-goto menu
+
+set /p TWITTER_USERNAME="Enter your Twitter username/email: "
+set /p TWITTER_PASSWORD="Enter your Twitter password: "
+
+echo.
+echo Starting bot with provided credentials...
+python twitter_bot.py %TWITTER_USERNAME% %TWITTER_PASSWORD%
+
+pause
+exit

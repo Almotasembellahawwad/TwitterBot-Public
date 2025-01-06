@@ -232,9 +232,9 @@ def twitter_bot(username, password):
     
     # Print banner
     print("╔══════════════════════════════════════════╗")
-    print("║            Twitter Bot v1.0               ║")
+    print("║            Twitter Bot v1.0              ║")
     print("║         Created by: Motasem              ║")
-    print("║    https://github.com/mo3tasem         ║")
+    print("║    https://github.com/mohasbks           ║")
     print("╚══════════════════════════════════════════╝")
     print("\n")
 
@@ -343,17 +343,19 @@ if __name__ == "__main__":
     print("[*] Initializing Twitter Bot...")
     print(" [*] Press Ctrl+C to stop the bot")
     
-    try:
-        # Get credentials
-        username = input("Enter your Twitter username/email: ")
-        password = input("Enter your Twitter password: ")
+    if len(sys.argv) != 3:
+        print("Error: Please provide Twitter username and password")
+        print("Usage: python twitter_bot.py <username> <password>")
+        sys.exit(1)
         
-        # Start the bot
+    username = sys.argv[1]
+    password = sys.argv[2]
+    
+    try:
         twitter_bot(username, password)
     except KeyboardInterrupt:
-        print("\n [*] Bot stopped by user")
+        print("\n[!] Bot stopped by user")
+        sys.exit(0)
     except Exception as e:
-        print(f"\n [!] An error occurred: {str(e)}")
-    finally:
-        print("\n [*] Bot stopped. Press any key to return to menu...")
-        input()
+        print(f"\n[!] An error occurred: {str(e)}")
+        sys.exit(1)
