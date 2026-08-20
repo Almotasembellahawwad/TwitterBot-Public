@@ -64,7 +64,7 @@
 
 **1. Clone the repository:**
 ```bash
-git clone https://github.com/mohasbks/TwitterBot-Public.git
+git clone https://github.com/Almotasembellahawwad/TwitterBot-Public.git
 cd TwitterBot-Public
 ```
 
@@ -91,13 +91,13 @@ python twitter_bot.py
 ## ⚠️ Disclaimer
 
 > [!WARNING]  
-> This bot is created for **educational purposes only**. Using automated tools on Twitter may violate their Terms of Service. The maintainer (`mohasbks`) is not responsible for any account suspensions or bans resulting from the use of this software. Always use automation responsibly and respect platform API limits.
+> This bot is created for **educational purposes only**. Using automated tools on Twitter may violate their Terms of Service. The maintainer (`Almotasembellahawwad`) is not responsible for any account suspensions or bans resulting from the use of this software. Always use automation responsibly and respect platform API limits.
 
 ---
 
 <div align="center">
   <p><b>Built with ❤️ by Motasem Bellah</b></p>
-  <a href="https://github.com/mohasbks">
+  <a href="https://github.com/Almotasembellahawwad">
     <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" />
   </a>
 </div>
